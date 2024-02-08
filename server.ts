@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
 // Use Static Files
+//sai pheua khao therng folder upload houp
 app.use('/uploads', express.static('uploads'))
 app.use('/uploads/images', express.static('uploads/images'))
 

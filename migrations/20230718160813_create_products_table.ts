@@ -1,3 +1,6 @@
+//file ni man hao sai npx knex migrate:make create_products_table
+//sai phuea kam nod tables hai khue kun
+
 exports.up = function(knex: any) {
   return knex.schema.createTable('products', function (table: any) {
     table.increments('id').primary()

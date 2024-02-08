@@ -1,3 +1,6 @@
+//nar ni man khor moon product thung mod thar hao yark aow mun pai vai nai mysql man sai command ni:
+//npx knex seed:run leo hao ka pai click 3kheed t u nai file mysql
+
 exports.seed = function(knex: any) {
   // Deletes ALL existing entries
   return knex('products').del()

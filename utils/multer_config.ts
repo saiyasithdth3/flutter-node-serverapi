@@ -29,6 +29,7 @@ const fileFilter = (
   file: Express.Multer.File,
   callback: FileFilterCallback
 ) => {
+  //image/ man hup tae sa phc houp pharb
   if (file.mimetype.startsWith("image/")) {
     callback(null, true)
   } else {
@@ -39,10 +40,11 @@ const fileFilter = (
 const multerConfig = {
   config: {
     storage,
-    limits: { fileSize: 1024 * 1024 * 5 },
+    //set hai houp pharb mee kha nard br kern 5MB
+    limits: { fileSize: 1024 * 1024 * 5 },//limit kha nard khg houp va hai mun mee kha nard thao dai
     fileFilter,
   },
-  keyUpload: "photo",
+  keyUpload: "photo",//hao sai key photo man hai up dai theua la houp
 }
 
 export default multerConfig
